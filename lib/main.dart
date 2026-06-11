@@ -190,7 +190,10 @@ class _DemoWidgetsState extends State<DemoWidgets> {
               margin: const EdgeInsets.only(top: 16),
               height: 100,
               width: double.infinity,
-              color: obtenerColor(color),
+               decoration: BoxDecoration(
+                color: obtenerColor(color),
+                borderRadius: BorderRadius.circular(10),
+              ),
               child: const Center(
                 child: Text(
                   "Color seleccionado",
